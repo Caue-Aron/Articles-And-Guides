@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;500);
+
+:root {
+	--background-color: #1c2020;
+
+	--regular: #d7c9a3;
+	--regular-highlighted: #8c8573;
+
+	--personal: #899f9e;
+	--background-personal: #242827;
+
+	--warning: #d19147;
+	--background-warning: #282624;
+
+	--danger: #df5d49;
+	--background-danger: #282524;
+
+	--safe: #89a136;
+	--background-safe: #282824;
+
+	--shadow: #372839;
+
+	--font-size-title: 32px;
+	--font-size-subtitle: 24px;
+	--font-size-block-title: 18px;
+	--font-size-block: 16px;
+
+	--margin-regular: 20px 0;
+
+	--block-dashed-border: 4px;
+}
+
+.image {
+	text-align: center;
+	width: 100%;
+}
+
+body {
+	font-family: 'Segoe UI';
+	background-color: var(--background-color);
+	padding-top: 50px;
+	color: var(--regular);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.chapter {
+	box-sizing: border-box;
+	border-bottom: 2px solid var(--regular);
+	margin-bottom: 120px;
+	/* margin-bottom: 30px; */
+	width: 80%;
+	padding: 0 10%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+img {
+	background-color: var(--background-color);
+	color: var(--regular);
+	max-width: 100%;
+}
+
+h3,
+p {
+	font-weight: normal;
+	margin: 0px;
+}
+
+h1 {
+	font-size: var(--font-size-title);
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: var(--font-size-subtitle);
+	margin: var(--margin-regular);
+	margin-top: 60px;
+}
+
+h3 {
+	font-size: var(--font-size-block-title);
+	color: var(--regular-highlighted);
+	margin-bottom: 4px;
+	font-style: italic;
+}
+
+p {
+	font-size: var(--font-size-block);
+	margin: var(--margin-regular);
+	margin-top: 0;
+	margin-left: 24px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+div.block {
+	margin: var(--margin-regular);
+	display: flex;
+	justify-content: center;
+}
+
+div.block div {
+	width: 75%;
+	border: var(--block-dashed-border) dashed var(--warning);
+	background-color: var(--background-warning);
+	padding: 10px 16px 14px 10px;
+}
+
+div.block p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.warning p {
+	color: var(--warning);
+}
+
+div.warning h3 {
+	color: var(--warning);
+}
+
+div.danger div {
+	border: var(--block-dashed-border) dashed var(--danger);
+	background-color: var(--background-danger);
+}
+
+div.danger p {
+	color: var(--danger);
+}
+
+div.danger h3 {
+	color: var(--danger);
+}
+
+div.safe div {
+	border: var(--block-dashed-border) dashed var(--safe);
+	background-color: var(--background-safe);
+}
+
+div.safe p {
+	color: var(--safe);
+}
+
+div.safe h3 {
+	color: var(--safe);
+}
+
+div.personal div {
+	border: var(--block-dashed-border) dashed var(--personal);
+	background-color: var(--background-personal);
+}
+
+div.personal p {
+	color: var(--personal);
+}
+
+div.personal h3 {
+	color: var(--personal);
+}
